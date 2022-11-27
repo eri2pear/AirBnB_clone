@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Defines a user class"""
+
+"""Defines a user module inherited from the BaseModel"""
+
 from models.base_model import BaseModel
 
 
@@ -12,7 +14,7 @@ class User(BaseModel):
         last_name (str): last name of the user.
     """
 
-    email = ""
-    password = ""
-    first_name = ""
-    last_name = ""
+    email: str = ""
+    password: str = ""
+    first_name: str = ""
+    last_name: str = ""

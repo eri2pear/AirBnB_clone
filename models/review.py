@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Defines a review class"""
+
+"""Defines a review module inherited from the Basemodel"""
+
 from models.base_model import BaseModel
 
 
@@ -11,6 +13,6 @@ class Review(BaseModel):
         text (str): text of the Review
     """
 
-    place_id = ""
-    user_id = ""
-    text = ""
+    place_id: str = ""
+    user_id: str = ""
+    text: str = ""
