@@ -18,7 +18,7 @@ class TestUser_instantiation(unittest.TestCase):
     """Unittests for testing instantiation of the User class."""
 
     def test_no_args_instantiates(self):
-        self_assertEqual(User, type(User()))
+        self.assertEqual(User, type(User()))
 
     def test_new_instance_stored_in_objects(self):
         self.assertIn(User(), models.storage.all().values())
